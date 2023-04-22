@@ -12,8 +12,8 @@
 
 .inputContainer {
     background-color: var(--color-pink);
-    width: 1000px;
-    height: 100px;
+    width: 996px;
+    height: 96px;
     display: grid;
     grid-template-columns: 2fr 3fr 2fr 3.5fr 1.5fr 3fr;
     grid-template-rows: 1fr;
