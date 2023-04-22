@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 100px auto 100px;
   font-family: 'Montserrat';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
