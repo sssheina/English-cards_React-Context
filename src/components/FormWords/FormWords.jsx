@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './FormWords.css';
 
-import save_pink from '../../assets/images/save_pink.png';
+import save_pink from '../../assets/images/save_pink-pink.png';
+import delete_pink from '../../assets/images/delete_pink.png';
 
 export default function FormWords() {
 
@@ -28,9 +29,15 @@ const [ userName, setLastName ] = useState('');
       // onChange={() => set(e.targer.value)}
       >
       </input>
-      <div className="inputSaveButton">
+      
+      <div className='card-buttons'>
+        <div className="inputSaveButton">
               <img src={save_pink} className='inputIcon icon' alt='Save'></img>
-            </div>
+      </div>
+      <div className="inputDeleteButton">
+              <img src={delete_pink} className='inputIcon icon' alt='Delete'></img>
+      </div>
+      </div>
     </div>
   );
 }

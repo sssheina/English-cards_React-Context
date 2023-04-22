@@ -32,18 +32,19 @@
     font-weight: 800;
   }
 
-.inputSaveButton {
+.inputSaveButton,.inputDeleteButton {
     justify-self: end;
     width: 40px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
-.inputSaveButton:focus {
+.inputSaveButton:focus,.inputDeleteButton:focus {
     outline: none;
-    box-shadow: 0 0 0 5px var(--color-pinklite);
+    box-shadow: 0 0 0 5px var(--color-white);
   }
 
-  .inputSaveButton:active {
-    box-shadow: 2px 2px 7px var(--color-pinklite);
+  .inputSaveButton:active,.inputDeleteButton:active {
+    box-shadow: 4px 4px 10px var(--color-white);
+    border: 1px solid var(--color-pink);
   }
