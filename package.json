@@ -2,7 +2,7 @@
   "name": "my-app3",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sssheina.github.io/Week_26_Project_Eng_2/",
+  "homepage": "https://sssheina.github.io/English-cards_React-Context/",
   "dependencies": {
     "@react-spring/web": "9.7.1",
     "@testing-library/jest-dom": "5.16.5",
@@ -45,6 +45,6 @@
   },
   "devDependencies": {
     "eslint": "8.36.0",
-    "gh-pages": "5.0.0"
+    "gh-pages": "^5.0.0"
   }
 }
