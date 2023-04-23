@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { CollectionWordsContext } from '../../context/CollectionWordsContext';
+import { motion } from "framer-motion";
 
 import './Card.css';
 import '../../assets/styles/variables.css';
@@ -10,7 +11,7 @@ import edit_pink from '../../assets/images/edit_pink.png';
 import save_pink from '../../assets/images/save_pink-pink.png';
 
 export default function Card(props) {
-  const { updateWord } = useContext(CollectionWordsContext);
+  const { updateWord, deleteWord } = useContext(CollectionWordsContext);
 
   const { id, english, transcription, russian, tags } = props;
   const [isEdit, setIsEdit] = useState(false);
@@ -70,7 +71,10 @@ export default function Card(props) {
   }
 
   return (
-    <div className='card-word'>
+    <motion.div className='card-word'
+    initial={{ opacity: 0, scale: 2 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}>
       {isEdit ? (
         <>
           <p className='card-item'>
@@ -152,12 +156,12 @@ export default function Card(props) {
             <div className='cardEditButton' onClick={onEditClick}>
               <img src={edit_pink} className='edit icon' alt='edit'></img>
             </div>
-            <div className='cardDeleteButton'>
+            <div className='cardDeleteButton' onClick={() => deleteWord(id)}>
               <img src={delete_pink} className='delete icon' alt='delete'></img>
             </div>
           </div>
         </>
       )}
-    </div>
+    </motion.div>
   );
 }
