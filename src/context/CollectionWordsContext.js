@@ -126,22 +126,21 @@ const addWord = async (newWord) => {
 
 	return (
 		<CollectionWordsContext.Provider
-			value={{
-				dictionary,
-				setDictionary,
-				isLoading,
-				error,
-				addWord,
-				updateWord,
-				updatedWord,
-				setUpdatedWord,
-				deleteWord,
-			}}
+		  value={{
+			dictionary,
+			setDictionary,
+			isLoading,
+			error,
+			addWord,
+			updateWord,
+			updatedWord,
+			setUpdatedWord,
+			deleteWord,
+		  }}
 		>
-			{props.children}
-			{isLoading ? <Spinner /> : props.children}{' '}
+		  {isLoading ? <Spinner /> : props.children}
 		</CollectionWordsContext.Provider>
-	);
+	  );
 };
 
 
