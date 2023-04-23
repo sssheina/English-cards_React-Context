@@ -10,7 +10,7 @@ import delete_pink from '../../assets/images/delete_pink.png';
 
 export default function FormWords() {
   const { addWord } = useContext(CollectionWordsContext);
-  const [inputText, setInputText] = useState(props);
+  const [inputText, setInputText] = useState([]);
   const [isEmpty, setIsEmpty] = useState(true);
 
   const handleChangeInput = (event) => {
@@ -49,13 +49,17 @@ export default function FormWords() {
       alert("Error: Please fill in all the fields");
     } else {
       console.log("Form parameters:", inputText);
+      // addWord(inputText);
+      // setIsEmpty();
       addWord(inputText);
-      setIsEmpty();
+      setInputText({});
+      setIsEmpty(true);
     }
   }
 
   const clearForm = () => {
     setIsEmpty();
+    setIsEmpty(true);
   };
 
   return (
@@ -94,7 +98,7 @@ export default function FormWords() {
       
       <div className='card-buttons'>
         <div className="inputSaveButton">
-              <img src={save_pink} className={`inputIcon icon ${isEmpty ? "disabled" : ""}`} alt='Save'onClick={onSubmit}
+              <img src={save_pink} className={`inputIcon icon ${isEmpty ? "disabled" : ""}`} disabled={isEmpty} alt='Save'onClick={onSubmit}
               ></img>
       </div>
       <div className="inputDeleteButton">

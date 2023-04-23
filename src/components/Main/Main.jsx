@@ -16,7 +16,7 @@ function Main() {
       <FormWords />
       <div className="cards-map">
         {isLoading && <div >Loading...</div>}
-        {!isLoading && dictionary && dictionary.map((card) => 
+        {!isLoading && dictionary.map((card) => 
           
           <Card 
             key={card.id}
