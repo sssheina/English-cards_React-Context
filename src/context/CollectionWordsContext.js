@@ -72,7 +72,7 @@ const addWord = async (newWord) => {
 	// };
 
 	const updateWord = (updatedWord) => {
-		console.log(updatedWord);
+		// console.log(updatedWord);
 		setIsLoading(true);
 		fetch(
 			`http://itgirlschool.justmakeit.ru/api/words/${updatedWord.id}/update`,
