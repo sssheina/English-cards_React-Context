@@ -11,17 +11,15 @@ function Header() {
   
   return (
     <div className='header'>
-      <motion.div
+      <div
         className='logoBlock'
-        whileHover={{
-          scale: 1.03,
-        }}
+        
       >
         <img className='logo' src={logo} alt='logo' />
         <Link to='/' className='logoA'>
           ENGLISH CARDS          
         </Link>
-      </motion.div>
+      </div>
       <nav className='menu'>
         <ul className='menuList'>
           <motion.li
