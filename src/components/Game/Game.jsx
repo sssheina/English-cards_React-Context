@@ -1,18 +1,22 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useContext } from "react";
 import { motion } from 'framer-motion';
 
 import './Game.css';
 import '../../assets/styles/variables.css';
 
 import Array from '../../utils/cards';
+import { CollectionWordsContext } from '../../context/CollectionWordsContext';
 
 export default function Game(props) {
   const [index, setIndex] = useState(0);
   const [pressed, setPressed] = useState(false);
   const [counter, setCounter] = useState(1);
   const [viewCard, setViewCard] = useState(false);
-
-  let word = Array[index];
+  const { dictionary } = useContext(CollectionWordsContext);
+  
+const word = dictionary[index];
+  // let word = Array[index];
 
   const handleNextClick = () => {
     if (index + 1 >= Array.length) {
