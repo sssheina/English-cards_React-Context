@@ -73,7 +73,6 @@ function Home() {
           animate={{ rotate: 720 }}
           transition={{
             duration: 1,
-            // delay: 0.5,
             repeatDelay: 0.5,
             repeatType: 'reverse',
             type: 'tween',

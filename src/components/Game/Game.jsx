@@ -16,7 +16,6 @@ export default function Game(props) {
   const { dictionary } = useContext(CollectionWordsContext);
   
 const word = dictionary[index];
-  // let word = Array[index];
 
   const handleNextClick = () => {
     if (index + 1 >= Array.length) {

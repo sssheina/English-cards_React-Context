@@ -49,28 +49,6 @@ const addWord = async (newWord) => {
     }
 
 
-	// const addWord = (newWord) => {
-	// 	setIsLoading(true); // set isLoading to true before making the API call
-	// 	fetch('http://itgirlschool.justmakeit.ru/api/words/add', {
-	// 		method: 'POST',
-	// 		headers: {
-	// 			'Content-Type': 'application/json',
-	// 		},
-	// 		body: JSON.stringify(newWord),
-	// 	})
-	// 		.then((response) => response.json())
-	// 		.then((data) => {
-	// 			setDictionary((prevDictionary) => [...prevDictionary, data]);
-	// 		})
-	// 		.catch((error) => {
-	// 			console.error('Error adding word: ', error);
-	// 			setError(error);
-	// 		})
-	// 		.finally(() => {
-	// 			setIsLoading(false); // set isLoading to false after the API call is complete
-	// 		});
-	// };
-
 	const updateWord = (updatedWord) => {
 		// console.log(updatedWord);
 		setIsLoading(true);
@@ -141,8 +119,4 @@ const addWord = async (newWord) => {
 		  {isLoading ? <Spinner /> : props.children}
 		</CollectionWordsContext.Provider>
 	  );
-};
-
-
-
-	
+};	

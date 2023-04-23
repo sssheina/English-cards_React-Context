@@ -5,7 +5,6 @@ const cards = [
     transcription: '|wɜːrd|',
     russian: 'слово',
     tags: 'basic',
-    // isSelected: true,
   },
   {
     id: '2',
