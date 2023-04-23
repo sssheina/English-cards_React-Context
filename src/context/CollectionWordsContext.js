@@ -100,7 +100,13 @@ const addWord = async (newWord) => {
 			});
 	};
 
+	if (isLoading) {
+        return <Spinner />
+    }
 
+    if (error) {
+        return <Error />
+    }
 
 	return (
 		<CollectionWordsContext.Provider

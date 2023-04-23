@@ -13,6 +13,7 @@ export default function Game(props) {
   const [pressed, setPressed] = useState(false);
   const [counter, setCounter] = useState(1);
   const [viewCard, setViewCard] = useState(false);
+  // const { dictionary } = useContext(CollectionWordsContext);
   const { dictionary } = useContext(CollectionWordsContext);
   
 const word = dictionary[index];
@@ -110,7 +111,7 @@ const word = dictionary[index];
             {pressed ? (
               <div className="game-translate">{word.russian}</div>
             ) : (
-              <motion.button
+              <motion.span
                 className="game-buttonName"
                 ref={ref}
                 whileHover={{
@@ -119,7 +120,7 @@ const word = dictionary[index];
               >
                 {' '}
                 translate
-              </motion.button>
+              </motion.span>
             )}
           </button>
         </motion.div>
