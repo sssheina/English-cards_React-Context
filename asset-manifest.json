@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/English-cards_React-Context/static/css/main.1704f063.css",
-    "main.js": "/English-cards_React-Context/static/js/main.d302621e.js",
+    "main.css": "/English-cards_React-Context/static/css/main.1e405130.css",
+    "main.js": "/English-cards_React-Context/static/js/main.907c12c1.js",
     "static/js/787.22c43ede.chunk.js": "/English-cards_React-Context/static/js/787.22c43ede.chunk.js",
     "static/media/404c.png": "/English-cards_React-Context/static/media/404c.9a6e1518566cd2f9f0da.png",
     "static/media/picLogo.png": "/English-cards_React-Context/static/media/picLogo.27f5d0e9c9dc17a6b836.png",
+    "static/media/error.png": "/English-cards_React-Context/static/media/error.11279ed6e34809808ee7.png",
     "static/media/logo_1.png": "/English-cards_React-Context/static/media/logo_1.d654ecbf9560b7119dfb.png",
     "index.html": "/English-cards_React-Context/index.html",
-    "main.1704f063.css.map": "/English-cards_React-Context/static/css/main.1704f063.css.map",
-    "main.d302621e.js.map": "/English-cards_React-Context/static/js/main.d302621e.js.map",
+    "main.1e405130.css.map": "/English-cards_React-Context/static/css/main.1e405130.css.map",
+    "main.907c12c1.js.map": "/English-cards_React-Context/static/js/main.907c12c1.js.map",
     "787.22c43ede.chunk.js.map": "/English-cards_React-Context/static/js/787.22c43ede.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1704f063.css",
-    "static/js/main.d302621e.js"
+    "static/css/main.1e405130.css",
+    "static/js/main.907c12c1.js"
   ]
 }
